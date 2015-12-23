@@ -1,0 +1,39 @@
+VAR choix;
+VAR angle ;
+VAR a;
+VAR b;
+VAR c;
+
+DEBUT
+
+COULEUR(222,12,9);
+BASPINCEAU;
+EPAISSEUR 9;
+
+choix =0;
+
+angle=  90 ;
+	SI choix ALORS{
+		FOR 4 TIMES{
+			AVANCE 500;
+			TOURNE 90 ;
+		}
+	}SINON{
+
+	HAUTPINCEAU;
+	AVANCE 100;
+	TOURNE 90;
+	AVANCE 200;
+	TOURNE 90;
+	BASPINCEAU;
+	a=75;
+	b=5;
+	c=5;
+	TANTQUE a FAISONS{
+		COULEUR(b,a,c);
+		AVANCE b;
+		TOURNE c;
+		a=(a-1);
+	}
+}
+FIN

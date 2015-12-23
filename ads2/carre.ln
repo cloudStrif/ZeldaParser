@@ -1,0 +1,28 @@
+VAR a;
+VAR b ;
+
+DEBUT
+a=10 ;
+b = 8;
+HAUTPINCEAU;
+AVANCE 300 ;
+TOURNE 90 ;
+AVANCE 200;
+TOURNE 0-90;
+COULEUR (250,25,0);
+EPAISSEUR 5;
+
+BASPINCEAU;
+WHILE (b >0){
+	a = a +30;
+	b=b-1;
+	IF(b MOD 2) THEN{	
+		
+		TOURNE 90;		
+	}ELSE{		
+		
+		AVANCE 200;
+	}
+}
+
+FIN

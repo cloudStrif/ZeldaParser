@@ -1,0 +1,34 @@
+VAR a;
+VAR b;
+VAR c;
+VAR d ;
+VAR color;
+VAR color2;
+VAR color3;
+
+DEBUT
+EPAISSEUR 5;
+HAUTPINCEAU;
+AVANCE 350;
+TOURNE 90;
+AVANCE 300;
+TOURNE 90;
+BASPINCEAU;
+a=33;
+b=5;
+c=15;
+d=0 ;
+color = 10;
+color2 = 100;
+color3 = 49;
+TANTQUE a FAISONS{
+	color = (color+3);
+	color2 = (color2+4);
+	COULEUR(color3,color,color2);
+	d = d+1;
+	AVANCE b+d;
+	TOURNE c ;
+	a=a-1;
+}
+
+FIN

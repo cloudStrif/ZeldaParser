@@ -1,0 +1,49 @@
+package ads2;
+/*
+ * Les plusieurs exceptions qui peuvent survenir
+ */
+class LexerException extends Exception {
+	public LexerException(int line, int column) {
+		super("Unexpected character at line " + line + " column " + column + ".");
+	}
+}
+
+class ParserException extends Exception {
+	public ParserException(String s) {
+		super("'" + s + "' not expected.");
+	}
+}
+
+class VariableNotDefinedException extends Exception {
+	public VariableNotDefinedException(String name) {
+		super("Variable '" + name + "' called before being defined.");
+	}
+}
+
+class VariableNotInitializedException extends Exception {
+	public VariableNotInitializedException(String name) {
+		super("Variable '" + name + "' called before being initialized.");
+	}
+}
+
+class VariableTwiceDefinedException extends Exception {
+	public VariableTwiceDefinedException(String name) {
+		super("Variable '" + name + "' defined twice.");
+	}
+}
+class Divisionzero extends Exception{
+	public Divisionzero(){
+		super("EXCEPTION :Regretable division par 0 !!!On ne peux pas");
+	}
+}
+class Couleure extends Exception{
+	public Couleure(){
+		super("EXCEPTION :On ne peut pas depasser RGB 255 ! ");
+	}
+}
+
+class Sortie extends Exception{
+	public Sortie(){
+		super("Sortie du cadran de Dessin");
+	}
+}
