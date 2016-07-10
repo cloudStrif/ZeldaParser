@@ -1,5 +1,5 @@
 
-========Projet ADS4 -Patrick_Chen (VERSION EXECUTABLE SUR LINUX)  =============
+========Projet ADS4 (VERSION EXECUTABLE SUR LINUX)  =============
 ===============================================================================
 <img src ="ads2/img2/logo.png">
 ![img](https://github.com/raitogriffith/parser/blob/master/out.gif)
